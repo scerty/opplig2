@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+ /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x  */
+ /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-top */
+ /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+/* https://www.w3schools.com/css/css_positioning.asp */
+
+
+
+/*   HEADER START!!!----------------------------------------*/
+header{
+    position: fixed; 
+*{
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Fredoka One', cursive; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --farge: #3D2F28;
+
+    --farge-3: #BD0000;
+    --farge_2: #1e5e00;
+
+  /*  --farge_2: rgb(80, 177, 0);*/
+  
+    
+    --box-shadow:0 .2rem 1.5rem rgba(0, 0, 0, 0.116);
+    --margin : 30px;
+    --light-color:#666;
+   
+    text-decoration: none;
+    outline: none; border: none;
+   /* text-transform: capitalize;*/
+    transition: all .2s linear;
+    }
+
+
+
+
+
+.topicalcont h1{
+    font-size: 3rem;color: #1e5e00;
+    margin-top: 150x;
+    margin-bottom: 10px;
+}
+.topicalcont h2{ font-size: 1.7rem;  padding-left: 10px;
+
+}
+.topicalcont p{
+    font-size: 1.4rem; padding-left: 10px;
+}
+
+.topicalcont{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.imagetopic{
+margin: 10px;
+padding: 20px;
+border: solid .1rem #ccc;
+    
+}
+.imagetopic img{
+
+    object-fit: cover;
+    width: 100%;
+   
+}
+
+
+ 
+
+
+
+
+
+
+
+.home .b{
+    padding: 0;
+}
+.godtogenkelt {
+    color: #fff;
+    font-size: 2.8rem;
+}
+
+.subdesc{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    text-shadow: 5px 5px 5px rgb(51, 51, 51);
+}
+
+
+    .vilkommen {
+        color: #fff;
+        font-size: 1.3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+
+
+
+
+
+.topical{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.topical h1{
+    font-size: 2rem;
+}
+
+.topical p{
+    font-size: 1.3rem;
+}
+
+
+.home .home-slider .slide .contentb {
+    flex: 1 1 45rem;
+    /* background-color: rgba(34, 34, 34, 0.199); */
+    /* background-color: #3d2f2850; */
+    background-image: linear-gradient(to right, #000000af , #0000005d);
+    padding: 5rem;
+}
+
+
+
+html{
+    font-size: 80.5%;
+   overflow-x: hidden ; 
+   scroll-padding-top: 5.5rem ; 
+   scroll-behavior: smooth; 
+}
+/*   HEADER START!!!----------------------------------------*/
+header{
+    position: fixed; 
+    top: 0;left: 0 ;right:0;
+    background-color: var(--farge_2);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+header .logo{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .navbar a{
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:#fff;
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color:#333;
+    background: #fff;
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:3rem;
+    line-height: 3rem;
+    width:3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color:#333;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+/*   HEADER END!!!----------------------------------------*/
+
+
+
+
+.sub-title{
+    text-align: center;
+}
+/* ====================== HOME  SECTION  START ==================================*/
+.home{
+background-color: var(--farge_2);
+background-image: url(te2.png);
+background-size: cover;
+background-position: center;
+
+}
+
+
+section {
+    padding: 2rem 8%;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    
+    }
+
+    .home .home-slider .slide{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:2rem; 
+        padding-top: 9rem;
+    }
+    
+    .home .home-slider .slide .content{
+        flex:1 1 45rem;
+       /* background-color: rgba(34, 34, 34, 0.199);*/
+      /* background-color: #3d2f2850;*/
+       background-image: linear-gradient(to right, #3d2f287e , rgba(255, 255, 255, 0));
+        padding: 1rem;
+    }
+    
+    .home .home-slider .slide .image{
+        flex:1 1 45rem; 
+       
+    }
+    
+    .home .home-slider .slide .image img{
+        width: 100%;
+    }
+    
+    .home .home-slider .slide .content span{
+        color:#333;
+        font-size: 1.6rem;
+    }
+    
+  
+    .home .home-slider .slide .content p{
+        color:#fff;
+        font-size: 1.6rem;
+        padding:.5rem 0;
+        line-height: 1.5;
+    }
+
+    
+
+/* ====================== HOME  SECTION    END ==================================*/
+
+
+
+
+
+
+
+/* -------------------------------------- MENNU START -------------------------------*/
+
+
+
+
+
+
+
+
+    
+.footer2{
+    background: #333;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+
+    
+}
+
+.box-foot a {
+    text-decoration: none;
+    color:#ccc;
+    display:block ;
+    padding: .1rem;
+
+
+}
+
+
+.box-foot a:hover{
+    color: var(--farge_2);
+}
+
+.credit{
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    text-align: center;
+}
+
+.credit span{
+    color: #222;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+
+.footer2 .box-container-foot{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap:1.5rem ;
+}
+.footer2 .box-container-foot .box-foot h3{
+    
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+
+}
+
+.footer2 .box-container-foot .box-foot h3{
+
+}
+
+
+
+
+
+
+
+h5{
+    font-size:1.8rem;
+}
+
+
+
+
+.menu-btns{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.menu-btn{
+    
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: #fff;
+   /* border: none; */
+  
+    color: var(--farge);
+    display: block;
+    margin: 0 1rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+}
+.menu-btn::after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--farge);
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+.menu-btn:hover::after{
+    width: 100%;
+}
+.menu-btn:hover{
+    opacity: 0.8;
+}
+.active-btn{
+    color: var(--farge_2);
+}
+.home .b{
+    background-color: var(--farge);
+}
+
+
+
+/*   MEDIA   MEDIA   MEDIA   MEDIA   MEDIA   MEDIA   MEDIA   */
+@media (max-width:991px){
+    html{
+        font-size: 75.5% 
+     }
+    header{
+        padding:1rem 2rem;
+    }
+}
+
+@media(max-width:768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top:100% ; left: 0; right: 0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /*js */
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /*js */
+    }
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background:#333;
+    }
+
+
+    .topicalcont{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+
+    
+
+.topicalcont h1{
+    font-size: 2.4rem;color: #0047b1;
+    
+}
+
+
+}
